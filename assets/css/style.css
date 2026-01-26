@@ -217,3 +217,165 @@ body {
   max-height:300px;
   opacity:1;
 }
+
+.process-section {
+  background: #fffaf3;
+}
+
+.process-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 40px 25px 30px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.15);
+}
+
+.process-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: #fff3cd;
+  border-radius: 50%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.process-card .step {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-weight: 700;
+  color: #ffc107;
+  font-size: 14px;
+}
+
+.process-card.highlight {
+  border: 2px solid #ffc107;
+}
+
+.health-section {
+  background: linear-gradient(135deg, #fff7e6, #fff);
+}
+
+.health-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 22px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+  transition: all 0.4s ease;
+}
+
+.health-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.14);
+}
+
+.health-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.health-card h6 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.health-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.testimonial-section {
+  background: linear-gradient(135deg, #fff7e6, #ffffff);
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 35px 28px;
+  height: 100%;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: "❝";
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 60px;
+  color: rgba(255,193,7,0.2);
+  line-height: 1;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 65px rgba(0,0,0,0.15);
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffc107;
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewer h6 {
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.reviewer small {
+  color: #777;
+}
+
