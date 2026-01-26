@@ -18,6 +18,29 @@
   position: relative;
   color: #ffffff;
 }
+.product-card {
+  border-radius: 18px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+.product-img {
+  height: 240px;
+  width: 100%;
+  object-fit: contain;   /* 👈 full image visible */
+  background: #fff;      /* empty space white রাখবে */
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
   </style>
 </head>
 
@@ -161,113 +184,308 @@
 </section>
 
 <!-- ================= PRODUCTS ================= -->
-<section class="py-5">
+<section class="py-5 bg-light">
   <div class="container">
+
+    <!-- Heading -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold">Our Popular Products</h2>
-      <p class="text-muted">Choose the best for your family</p>
+      <span class="text-warning fw-semibold text-uppercase small">
+        Our Collection
+      </span>
+      <h2 class="fw-bold mt-2">Our Popular Products</h2>
+      <p class="text-muted">
+        Premium quality ghee crafted with tradition & care
+      </p>
     </div>
 
     <div class="row g-4">
-      <!-- Product Card -->
+
+      <!-- Product 1 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <img src="images/product-cow-ghee.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Cow Ghee</h5>
-            <p class="text-muted small">Traditional bilona cow ghee</p>
-            <h5 class="text-warning fw-bold">₹899 <small class="text-muted">/ kg</small></h5>
+        <div class="card product-card h-100 border-0 shadow-sm fade-in">
+          <div class="position-relative">
+            <img src="images/product-cow-ghee.jpg" class="card-img-top product-img" alt="Cow Ghee">
+            <span class="badge bg-success position-absolute top-0 start-0 m-3">
+              Best Seller
+            </span>
+          </div>
+
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">Cow Ghee</h5>
+            <p class="text-muted small mb-3">
+              Traditional bilona cow ghee
+            </p>
+
+            <div class="mb-3">
+              <span class="badge rounded-pill bg-secondary-subtle text-dark me-1">100% Pure</span>
+              <span class="badge rounded-pill bg-secondary-subtle text-dark">Bilona</span>
+            </div>
+
+            <h4 class="text-warning fw-bold">
+              ₹899 <small class="text-muted fs-6">/ kg</small>
+            </h4>
+
+            <a href="products.html" class="btn btn-warning w-100 mt-3">
+              View Details
+            </a>
           </div>
         </div>
       </div>
 
+      <!-- Product 2 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <img src="images/product-buffalo-ghee.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Buffalo Ghee</h5>
-            <p class="text-muted small">Rich & aromatic buffalo ghee</p>
-            <h5 class="text-warning fw-bold">₹799 <small class="text-muted">/ kg</small></h5>
+        <div class="card product-card h-100 border-0 shadow-sm fade-in">
+          <div class="position-relative">
+            <img src="images/product-buffalo-ghee.jpg" class="card-img-top product-img" alt="Buffalo Ghee">
+          </div>
+
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">Buffalo Ghee</h5>
+            <p class="text-muted small mb-3">
+              Rich & aromatic buffalo ghee
+            </p>
+
+            <div class="mb-3">
+              <span class="badge rounded-pill bg-secondary-subtle text-dark me-1">High Fat</span>
+              <span class="badge rounded-pill bg-secondary-subtle text-dark">Thick Aroma</span>
+            </div>
+
+            <h4 class="text-warning fw-bold">
+              ₹799 <small class="text-muted fs-6">/ kg</small>
+            </h4>
+
+            <a href="products.html" class="btn btn-warning w-100 mt-3">
+              View Details
+            </a>
           </div>
         </div>
       </div>
 
+      <!-- Product 3 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <img src="images/product-a2-ghee.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">A2 Ghee</h5>
-            <p class="text-muted small">Pure A2 cow milk ghee</p>
-            <h5 class="text-warning fw-bold">₹1299 <small class="text-muted">/ kg</small></h5>
+        <div class="card product-card h-100 border-0 shadow-sm fade-in">
+          <div class="position-relative">
+            <img src="images/product-a2-ghee.jpg" class="card-img-top product-img" alt="A2 Ghee">
+            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">
+              Premium
+            </span>
+          </div>
+
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">A2 Ghee</h5>
+            <p class="text-muted small mb-3">
+              Pure A2 cow milk ghee
+            </p>
+
+            <div class="mb-3">
+              <span class="badge rounded-pill bg-secondary-subtle text-dark me-1">A2 Milk</span>
+              <span class="badge rounded-pill bg-secondary-subtle text-dark">Ayurvedic</span>
+            </div>
+
+            <h4 class="text-warning fw-bold">
+              ₹1299 <small class="text-muted fs-6">/ kg</small>
+            </h4>
+
+            <a href="products.html" class="btn btn-warning w-100 mt-3">
+              View Details
+            </a>
           </div>
         </div>
       </div>
+
     </div>
 
-    <div class="text-center mt-4">
-      <a href="products.html" class="btn btn-outline-warning btn-lg">
+    <!-- CTA -->
+    <div class="text-center mt-5">
+      <a href="products.html" class="btn btn-outline-warning btn-lg px-4">
         View All Products <i class="bi bi-arrow-right"></i>
       </a>
     </div>
+
   </div>
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
-<section class="py-5 bg-light">
+<!--================== OUR PROCESS===============-->
+<section class="py-5 process-section">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="fw-bold">Customer Reviews</h2>
-      <p class="text-muted">Trusted by our happy customers</p>
+      <h2 class="fw-bold">Our Traditional Process</h2>
+      <p class="text-muted">From farm to your kitchen</p>
     </div>
 
     <div class="row g-4">
+      <div class="col-md-3">
+        <div class="process-card">
+          <div class="process-icon">🥛</div>
+          <h5>Fresh Milk</h5>
+          <p>
+            Fresh milk collected daily from healthy desi cows and buffaloes.
+          </p>
+          <span class="step">01</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="process-card">
+          <div class="process-icon">🍶</div>
+          <h5>Curd Making</h5>
+          <p>
+            Milk is naturally set into curd without any chemicals.
+          </p>
+          <span class="step">02</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="process-card">
+          <div class="process-icon">🪵</div>
+          <h5>Bilona Churning</h5>
+          <p>
+            Hand-churned using wooden bilona to extract butter.
+          </p>
+          <span class="step">03</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="process-card highlight">
+          <div class="process-icon">🟡</div>
+          <h5>Pure Ghee</h5>
+          <p>
+            Slow-heated butter turns into aromatic golden ghee.
+          </p>
+          <span class="step">04</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== HEALTH BENIFIT ================= -->
+<section class="py-5 health-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Health Benefits of Pure Ghee</h2>
+      <p class="text-muted">Why traditional ghee is good for your body</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="health-card">
+          <div class="health-icon">❤️</div>
+          <h6>Improves Digestion</h6>
+          <p>
+            Strengthens digestive fire and improves gut health.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="health-card">
+          <div class="health-icon">🧠</div>
+          <h6>Boosts Brain Power</h6>
+          <p>
+            Rich in healthy fats that support brain function.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="health-card">
+          <div class="health-icon">💪</div>
+          <h6>Strengthens Immunity</h6>
+          <p>
+            Helps fight infections and improves overall immunity.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="health-card">
+          <div class="health-icon">✨</div>
+          <h6>Healthy Skin & Hair</h6>
+          <p>
+            Nourishes skin and adds natural glow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-5 testimonial-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Customer Reviews</h2>
+      <p class="text-muted">Trusted by families across West Bengal</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Review 1 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <div class="card-body">
-            <div class="text-warning mb-2">
-              ★★★★★
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+
+          <p class="review-text">
+            “Taste and aroma are unmatched. Highly recommended for daily use.”
+          </p>
+
+          <div class="reviewer">
+            <div class="avatar">R</div>
+            <div>
+              <h6>Rajesh Kumar</h6>
+              <small>Kolkata</small>
             </div>
-            <p class="fst-italic">
-              "Taste and aroma are unmatched. Highly recommended!"
-            </p>
-            <h6 class="fw-semibold mb-0">Rajesh Kumar</h6>
-            <small class="text-muted">Kolkata</small>
           </div>
         </div>
       </div>
 
+      <!-- Review 2 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <div class="card-body">
-            <div class="text-warning mb-2">
-              ★★★★★
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+
+          <p class="review-text">
+            “Perfect for biryani and pulao. Genuine bilona ghee quality.”
+          </p>
+
+          <div class="reviewer">
+            <div class="avatar">P</div>
+            <div>
+              <h6>Priya Sharma</h6>
+              <small>Howrah</small>
             </div>
-            <p class="fst-italic">
-              "Perfect for biryani and pulao. Genuine quality."
-            </p>
-            <h6 class="fw-semibold mb-0">Priya Sharma</h6>
-            <small class="text-muted">Howrah</small>
           </div>
         </div>
       </div>
 
+      <!-- Review 3 -->
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm fade-in">
-          <div class="card-body">
-            <div class="text-warning mb-2">
-              ★★★★★
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+
+          <p class="review-text">
+            “Fast delivery, excellent packaging and pure taste.”
+          </p>
+
+          <div class="reviewer">
+            <div class="avatar">A</div>
+            <div>
+              <h6>Amit Das</h6>
+              <small>Salt Lake</small>
             </div>
-            <p class="fst-italic">
-              "Fast delivery and excellent packaging."
-            </p>
-            <h6 class="fw-semibold mb-0">Amit Das</h6>
-            <small class="text-muted">Salt Lake</small>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ================= CTA ================= -->
 <section class="py-5 text-center text-light" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">
