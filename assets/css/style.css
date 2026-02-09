@@ -94,17 +94,20 @@ body {
 
 /* ================= HEADER ================= */
 
-.logo-circle {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background-color: #f59e0b;
+.logo-circle{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#ffc107;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
 }
 
-.logo-text {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.2rem;
+.logo-text{
+  font-weight:700;
+  color:#000;
 }
 
 .nav-link {
@@ -134,6 +137,7 @@ body {
 .footer-section {
   background-color: #111827;
   color: #ffffff;
+  overflow:hidden;
 }
 
 .footer-text {
@@ -378,4 +382,182 @@ body {
 .reviewer small {
   color: #777;
 }
+
+
+/* Flipkart Style Action Bar */
+.product-action-bar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:6px;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.qty-flipkart{
+  display:flex;
+  align-items:center;
+  border:1px solid #ddd;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.qty-flipkart button{
+  width:32px;
+  height:34px;
+  border:none;
+  background:#f1f3f6;
+  font-size:20px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.qty-flipkart input{
+  width:44px;
+  border:none;
+  text-align:center;
+  font-weight:600;
+  outline:none;
+}
+
+.order-btn{
+  flex:1;
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:14px;
+}
+
+.share-mini{
+  display:flex;
+  gap:6px;
+}
+
+.share-mini a{
+  width:34px;
+  height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  border:1px solid #ddd;
+  color:#555;
+  transition:.2s;
+}
+
+.share-mini .wa:hover{
+  background:#25d366;
+  color:#fff;
+  border-color:#25d366;
+}
+
+.share-mini .fb:hover{
+  background:#1877f2;
+  color:#fff;
+  border-color:#1877f2;
+}
+
+/* Mobile Perfect Fit */
+@media(max-width:576px){
+  .product-action-bar{
+    padding:4px;
+    gap:6px;
+  }
+
+  .order-btn{
+    font-size:13px;
+    padding:5px 8px;
+  }
+}
+
+
+.product-img-box{
+  background: linear-gradient(145deg,#f9fafb,#ffffff);
+  border-radius:16px;
+  padding:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  position:relative;
+  transition:.3s ease;
+}
+
+.product-img-box:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 26px rgba(0,0,0,.12);
+}
+
+.product-img-box img{
+  max-height:200px;
+  object-fit:contain;
+}
+
+.best-badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  border-radius:8px;
+  padding:5px 10px;
+  font-size:12px;
+}
+
+/* ================= HOME PRODUCT CARD ================= */
+
+.home-img-box{
+  height:200px;
+  background:linear-gradient(145deg,#fafafa,#ffffff);
+  border-radius:18px;
+  margin:14px;
+  padding:12px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.home-product-img{
+  max-height:150px;
+  object-fit:contain;
+}
+
+.home-badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:#ffc107;
+  color:#000;
+  padding:4px 10px;
+  border-radius:10px;
+  font-size:12px;
+  font-weight:600;
+  box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+.home-product-card{
+  border-radius:20px;
+  overflow:hidden;
+  transition:.3s ease;
+}
+
+.home-product-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(0,0,0,.12);
+}
+
+/* Mobile */
+@media(max-width:576px){
+  .home-img-box{
+    height:180px;
+    margin:10px;
+  }
+
+  .home-product-img{
+    max-height:140px;
+  }
+}
+
+
+
+
+
 
