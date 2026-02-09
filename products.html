@@ -45,7 +45,7 @@
             <span class="logo-text">K</span>
           </div>
           <div class="d-flex flex-column lh-sm">
-            <span class="fw-bold fs-5">KDS Dairy</span>
+            <span class="fw-bold fs-5">KDS Dairy Products</span>
             <small class="text-muted">Pure Desi Ghee</small>
           </div>
         </a>
@@ -107,11 +107,13 @@
       <div class="row g-0 align-items-center">
 
         <div class="col-md-3 text-center p-3 position-relative">
-          <img src="images/product-cow-ghee.jpg" class="img-fluid" alt="Cow Ghee">
-          <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
-            Best Seller
-          </span>
-        </div>
+  <div class="product-img-box">
+    <img src="images/s1.png" class="img-fluid" alt="Cow Ghee">
+    <span class="badge bg-warning text-dark best-badge">
+      Best Seller
+    </span>
+  </div>
+</div>
 
         <div class="col-md-9">
           <div class="card-body d-flex flex-column h-100">
@@ -122,7 +124,7 @@
                 <small class="text-muted">Pure Desi Cow Ghee</small>
               </div>
               <div class="text-end">
-                <div class="fs-5 fw-bold text-success">₹899</div>
+                <div class="fs-5 fw-bold text-success">₹500</div>
                 <small class="text-muted">500 ml</small>
               </div>
             </div>
@@ -140,19 +142,37 @@
 
             <div class="mt-auto d-flex align-items-center gap-2 flex-wrap">
 
-              <!-- ORDER -->
-              <a
-                href="https://wa.me/919038364033?text=I%20want%20to%20order%20Cow%20Ghee%20500ml%20Price%20₹899"
-                target="_blank"
-                class="btn btn-success px-4"
-              >
-                <i class="bi bi-whatsapp me-1"></i> Order Now
-              </a>
+<div class="mt-auto product-action-bar">
+
+  <!-- Quantity -->
+  <div class="qty-flipkart">
+    <button type="button" onclick="changeQty(this,-1)">−</button>
+    <input type="number" value="1" min="1" class="qty-input">
+    <button type="button" onclick="changeQty(this,1)">+</button>
+  </div>
+
+  <!-- Order -->
+  <a
+    href="javascript:void(0)"
+    onclick="orderNow(this,'Cow Ghee','500ml','500')"
+    class="btn btn-success order-btn"
+  >
+    <i class="bi bi-whatsapp"></i> Order
+  </a>
+
+  <!-- Share -->
+  <!-- <div class="share-mini">
+    <a href="#" class="wa"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="fb"><i class="bi bi-facebook"></i></a>
+  </div> -->
+
+</div>
+
 
               <!-- SHARE -->
               <div class="ms-auto d-flex gap-2">
                 <a
-                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹899"
+                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹500"
                   target="_blank"
                   class="btn btn-outline-success btn-sm"
                   title="Share on WhatsApp"
@@ -179,51 +199,71 @@
     </div>
 
       <!-- PRODUCT 2: Buffalo Ghee -->
-      <div class="card mb-4 fade-in product-card">
-  <div class="row g-0 align-items-center">
+<div class="card mb-4 shadow-sm product-card">
+      <div class="row g-0 align-items-center">
 
-    <div class="col-md-3 product-image text-center p-3">
-      <img
-        src="images/product-buffalo-ghee.jpg"
-        class="img-fluid"
-        alt="Buffalo Ghee"
-      />
-    </div>
+        <div class="col-md-3 text-center p-3 position-relative">
+  <div class="product-img-box">
+    <img src="images/s1.png" class="img-fluid" alt="Cow Ghee">
+    <span class="badge bg-warning text-dark best-badge">
+      Pack of Two
+    </span>
+  </div>
+</div>
 
-    <div class="col-md-9">
-      <div class="card-body d-flex flex-column h-100">
+        <div class="col-md-9">
+          <div class="card-body d-flex flex-column h-100">
 
-        <div class="d-flex justify-content-between mb-2">
-          <div>
-            <h4 class="fw-semibold">Buffalo Ghee</h4>
-            <small class="text-muted">Rich & Aromatic</small>
-          </div>
-          <div class="text-end">
-            <div class="fs-4 fw-bold text-warning">₹799</div>
-            <small class="text-muted">500ml</small>
-          </div>
-        </div>
+            <div class="d-flex justify-content-between mb-2">
+              <div>
+                <h4 class="fw-semibold mb-0">Cow Ghee</h4>
+                <small class="text-muted">Pure Desi Cow Ghee</small>
+              </div>
+              <div class="text-end">
+                <div class="fs-5 fw-bold text-success">₹1000</div>
+                <small class="text-muted">1000 ml</small>
+              </div>
+            </div>
 
-        <p class="text-muted">
-          Thick texture with strong aroma. Ideal for sweets, halwa and daily cooking.
-        </p>
+            <p class="text-muted mb-2">
+              Traditional bilona method ghee made from grass-fed desi cow milk.
+              Rich aroma, excellent taste and natural nutrition.
+            </p>
 
-        <div class="mb-3">
-          <span class="badge bg-secondary me-2">High Fat</span>
-          <span class="badge bg-secondary me-2">Pure Milk</span>
-          <span class="badge bg-secondary">Slow Cooked</span>
-        </div>
-        
+            <div class="mb-3">
+              <span class="badge bg-light text-dark border me-2">Bilona Made</span>
+              <span class="badge bg-light text-dark border me-2">No Preservatives</span>
+              <span class="badge bg-light text-dark border">Farm Fresh</span>
+            </div>
+
             <div class="mt-auto d-flex align-items-center gap-2 flex-wrap">
 
-              <!-- ORDER -->
-              <a
-                href="https://wa.me/919038364033?text=I%20want%20to%20order%20Cow%20Ghee%20500ml%20Price%20₹899"
-                target="_blank"
-                class="btn btn-success px-4"
-              >
-                <i class="bi bi-whatsapp me-1"></i> Order Now
-              </a>
+<div class="mt-auto product-action-bar">
+
+  <!-- Quantity -->
+  <div class="qty-flipkart">
+    <button type="button" onclick="changeQty(this,-1)">−</button>
+    <input type="number" value="1" min="1" class="qty-input">
+    <button type="button" onclick="changeQty(this,1)">+</button>
+  </div>
+
+  <!-- Order -->
+  <a
+    href="javascript:void(0)"
+    onclick="orderNow(this,'Cow Ghee','500ml','500')"
+    class="btn btn-success order-btn"
+  >
+    <i class="bi bi-whatsapp"></i> Order
+  </a>
+
+  <!-- Share -->
+  <!-- <div class="share-mini">
+    <a href="#" class="wa"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="fb"><i class="bi bi-facebook"></i></a>
+  </div> -->
+
+</div>
+
 
               <!-- SHARE -->
               <div class="ms-auto d-flex gap-2">
@@ -247,69 +287,84 @@
               </div>
 
             </div>
-       
+
+          </div>
+        </div>
+
       </div>
-
-      
     </div>
-    
-
-  </div>
-</div>
-
 
       <!-- PRODUCT 3: A2 Ghee -->
-      <div class="card mb-4 fade-in product-card">
-  <div class="row g-0 align-items-center">
+       <div class="card mb-4 shadow-sm product-card">
+      <div class="row g-0 align-items-center">
 
-    <div class="col-md-3 product-image text-center p-3">
-      <img
-        src="images/product-a2-ghee.jpg"
-        class="img-fluid"
-        alt="A2 Ghee"
-      />
-    </div>
+        <div class="col-md-3 text-center p-3 position-relative">
+  <div class="product-img-box">
+    <img src="images/s1.png" class="img-fluid" alt="Cow Ghee">
+    <span class="badge bg-warning text-dark best-badge">
+      1 Ltr. Jar
+    </span>
+  </div>
+</div>
 
-    <div class="col-md-9">
-      <div class="card-body d-flex flex-column h-100">
+        <div class="col-md-9">
+          <div class="card-body d-flex flex-column h-100">
 
-        <div class="d-flex justify-content-between mb-2">
-          <div>
-            <h4 class="fw-semibold">A2 Ghee</h4>
-            <small class="text-muted">Gir Cow Milk</small>
-          </div>
-          <div class="text-end">
-            <div class="fs-4 fw-bold text-warning">₹1299</div>
-            <small class="text-muted">500ml</small>
-          </div>
-        </div>
+            <div class="d-flex justify-content-between mb-2">
+              <div>
+                <h4 class="fw-semibold mb-0">Cow Ghee</h4>
+                <small class="text-muted">Pure Desi Cow Ghee</small>
+              </div>
+              <div class="text-end">
+                <div class="fs-5 fw-bold text-success">₹1000</div>
+                <small class="text-muted">1 Ltr</small>
+              </div>
+            </div>
 
-        <p class="text-muted">
-          Premium ghee made from pure A2 cow milk. Easy to digest and highly nutritious.
-        </p>
+            <p class="text-muted mb-2">
+              Traditional bilona method ghee made from grass-fed desi cow milk.
+              Rich aroma, excellent taste and natural nutrition.
+            </p>
 
-        <div class="mb-3">
-          <span class="badge bg-secondary me-2">A2 Milk</span>
-          <span class="badge bg-secondary me-2">Ayurvedic</span>
-          <span class="badge bg-secondary">Premium</span>
-        </div>
+            <div class="mb-3">
+              <span class="badge bg-light text-dark border me-2">Bilona Made</span>
+              <span class="badge bg-light text-dark border me-2">No Preservatives</span>
+              <span class="badge bg-light text-dark border">Farm Fresh</span>
+            </div>
 
-        
             <div class="mt-auto d-flex align-items-center gap-2 flex-wrap">
 
-              <!-- ORDER -->
-              <a
-                href="https://wa.me/919038364033?text=I%20want%20to%20order%20Cow%20Ghee%20500ml%20Price%20₹899"
-                target="_blank"
-                class="btn btn-success px-4"
-              >
-                <i class="bi bi-whatsapp me-1"></i> Order Now
-              </a>
+<div class="mt-auto product-action-bar">
+
+  <!-- Quantity -->
+  <div class="qty-flipkart">
+    <button type="button" onclick="changeQty(this,-1)">−</button>
+    <input type="number" value="1" min="1" class="qty-input">
+    <button type="button" onclick="changeQty(this,1)">+</button>
+  </div>
+
+  <!-- Order -->
+  <a
+    href="javascript:void(0)"
+    onclick="orderNow(this,'Cow Ghee','1000ml','1000')"
+    class="btn btn-success order-btn"
+  >
+    <i class="bi bi-whatsapp"></i> Order
+  </a>
+
+  <!-- Share -->
+  <!-- <div class="share-mini">
+    <a href="#" class="wa"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="fb"><i class="bi bi-facebook"></i></a>
+  </div> -->
+
+</div>
+
 
               <!-- SHARE -->
               <div class="ms-auto d-flex gap-2">
                 <a
-                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹899"
+                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹1000"
                   target="_blank"
                   class="btn btn-outline-success btn-sm"
                   title="Share on WhatsApp"
@@ -329,167 +384,19 @@
 
             </div>
 
+          </div>
+        </div>
+
       </div>
     </div>
-
-  </div>
-</div>
 
 
       <!-- PRODUCT 4: Organic Ghee -->
-      <div class="card mb-4 fade-in product-card">
-  <div class="row g-0 align-items-center">
 
-    <div class="col-md-3 product-image text-center p-3">
-      <img
-        src="images/product-organic-ghee.jpg"
-        class="img-fluid"
-        alt="Organic Ghee"
-      />
-    </div>
-
-    <div class="col-md-9">
-      <div class="card-body d-flex flex-column h-100">
-
-        <div class="d-flex justify-content-between mb-2">
-          <div>
-            <h4 class="fw-semibold">Organic Ghee</h4>
-            <small class="text-muted">Certified Organic</small>
-          </div>
-          <div class="text-end">
-            <div class="fs-4 fw-bold text-warning">₹1499</div>
-            <small class="text-muted">500ml</small>
-          </div>
-        </div>
-
-        <p class="text-muted">
-          Chemical-free, hormone-free ghee produced using certified organic practices.
-        </p>
-
-        <div class="mb-3">
-          <span class="badge bg-secondary me-2">Certified</span>
-          <span class="badge bg-secondary me-2">No Hormones</span>
-          <span class="badge bg-secondary">Pure</span>
-        </div>
-
-      
-            <div class="mt-auto d-flex align-items-center gap-2 flex-wrap">
-
-              <!-- ORDER -->
-              <a
-                href="https://wa.me/919038364033?text=I%20want%20to%20order%20Cow%20Ghee%20500ml%20Price%20₹899"
-                target="_blank"
-                class="btn btn-success px-4"
-              >
-                <i class="bi bi-whatsapp me-1"></i> Order Now
-              </a>
-
-              <!-- SHARE -->
-              <div class="ms-auto d-flex gap-2">
-                <a
-                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹899"
-                  target="_blank"
-                  class="btn btn-outline-success btn-sm"
-                  title="Share on WhatsApp"
-                >
-                  <i class="bi bi-whatsapp"></i>
-                </a>
-
-                <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/products"
-                  target="_blank"
-                  class="btn btn-outline-primary btn-sm"
-                  title="Share on Facebook"
-                >
-                  <i class="bi bi-facebook"></i>
-                </a>
-              </div>
-
-            </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
       <!-- PRODUCT 5: Bilona Ghee -->
-      <div class="card mb-4 fade-in product-card">
-  <div class="row g-0 align-items-center">
 
-    <div class="col-md-3 product-image text-center p-3">
-      <img
-        src="images/product-bilona-ghee.jpg"
-        class="img-fluid"
-        alt="Bilona Ghee"
-      />
-    </div>
-
-    <div class="col-md-9">
-      <div class="card-body d-flex flex-column h-100">
-
-        <div class="d-flex justify-content-between mb-2">
-          <div>
-            <h4 class="fw-semibold">Bilona Ghee</h4>
-            <small class="text-muted">Traditional Process</small>
-          </div>
-          <div class="text-end">
-            <div class="fs-4 fw-bold text-warning">₹1199</div>
-            <small class="text-muted">500ml</small>
-          </div>
-        </div>
-
-        <p class="text-muted">
-          Hand-churned ghee prepared using ancient bilona method.
-        </p>
-
-        <div class="mb-3">
-          <span class="badge bg-secondary me-2">Handmade</span>
-          <span class="badge bg-secondary me-2">Slow Churn</span>
-          <span class="badge bg-secondary">Pure Tradition</span>
-        </div>
-
-       
-            <div class="mt-auto d-flex align-items-center gap-2 flex-wrap">
-
-              <!-- ORDER -->
-              <a
-                href="https://wa.me/919038364033?text=I%20want%20to%20order%20Cow%20Ghee%20500ml%20Price%20₹899"
-                target="_blank"
-                class="btn btn-success px-4"
-              >
-                <i class="bi bi-whatsapp me-1"></i> Order Now
-              </a>
-
-              <!-- SHARE -->
-              <div class="ms-auto d-flex gap-2">
-                <a
-                  href="https://wa.me/?text=Check%20out%20this%20Pure%20Cow%20Ghee%20₹899"
-                  target="_blank"
-                  class="btn btn-outline-success btn-sm"
-                  title="Share on WhatsApp"
-                >
-                  <i class="bi bi-whatsapp"></i>
-                </a>
-
-                <a
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/products"
-                  target="_blank"
-                  class="btn btn-outline-primary btn-sm"
-                  title="Share on Facebook"
-                >
-                  <i class="bi bi-facebook"></i>
-                </a>
-              </div>
-
-            </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
     </div>
@@ -523,7 +430,7 @@
             <div class="logo-circle">
               <span class="logo-text">K</span>
             </div>
-            <span class="fw-bold fs-4 text-white">KDS Dairy</span>
+            <span class="fw-bold fs-4 text-white">KDS Dairy Products</span>
           </div>
           <p class="footer-text">
             100% Pure Desi Ghee. Made from cow milk using traditional bilona method.
@@ -551,7 +458,7 @@
             </li>
             <li>
               <i class="bi bi-envelope-fill"></i>
-              <a href="mailto:info.kdsdairy@gmail.com">info.kdsdairy@gmail.com</a>
+              <a href="mailto:mkguha38@gmail.com">mkguha38@gmail.com</a>
             </li>
             <li>
               <i class="bi bi-geo-alt-fill"></i>
@@ -568,7 +475,7 @@
 
      <div class="footer-bottom text-center mt-4 pt-4 border-top">
   <p class="mb-1">
-    © <span id="year"></span> KDS Dairy Product. All rights reserved.
+    © <span id="year"></span> KDS Dairy Products. All rights reserved.
   </p>
   <p class="mb-0 small">
     Designed & Developed by 
@@ -629,6 +536,27 @@ document.querySelectorAll(".toggle-details").forEach(btn => {
       observer.observe(el);
     });
   </script>
+
+<script>
+function changeQty(btn, val){
+  let input = btn.parentElement.querySelector(".qty-input");
+  let newVal = parseInt(input.value) + val;
+  if(newVal < 1) newVal = 1;
+  input.value = newVal;
+}
+
+function orderNow(btn, name, size, price){
+  let qty = btn.parentElement.querySelector(".qty-input").value;
+  let total = price * qty;
+
+  let msg = `Hello, I want to order:\n\nProduct: ${name}\nSize: ${size}\nQuantity: ${qty}\nPrice: ₹${price}\nTotal: ₹${total}`;
+
+  let url = `https://wa.me/919038364033?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+</script>
+
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
