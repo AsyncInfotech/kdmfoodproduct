@@ -614,6 +614,43 @@ body {
 }
 
 
+.order-modal{
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.order-modal .modal-header{
+  background:linear-gradient(135deg,#f59e0b,#fbbf24);
+  color:#000;
+}
+
+.order-modal .form-control,
+.order-modal .form-select{
+  border-radius:10px;
+  padding:10px 14px;
+}
+
+.order-modal label{
+  font-weight:600;
+  font-size:14px;
+}
+
+.order-modal button{
+  border-radius:12px;
+  font-weight:600;
+}
+
+
+.shipping-banner{
+  background: linear-gradient(135deg,#ecfeff,#fff7ed);
+  border:1px dashed #f59e0b;
+  border-radius:14px;
+  padding:12px 16px;
+  font-weight:600;
+  color:#92400e;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
 
 
 
