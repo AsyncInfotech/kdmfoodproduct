@@ -774,5 +774,15 @@ body {
   }
 }
 
+/* Founder & CEO Image Perfect Circle */
+.founder-img{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid #ffc107;
+  padding:3px;
+  background:#fff;
+}
 
 
