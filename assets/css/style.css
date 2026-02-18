@@ -785,4 +785,22 @@ body {
   background:#fff;
 }
 
+.hero-slide{
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero-slide::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+.hero-slide .container{
+  position:relative;
+  z-index:2;
+}
+
+
 
