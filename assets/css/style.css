@@ -785,6 +785,33 @@ body {
   background:#fff;
 }
 
+
+
+
+.product-carousel{
+  background:#fff;
+  border-radius:10px;
+  padding:10px;
+}
+
+.product-img-slider{
+  height:220px;
+  object-fit:contain;
+}
+
+.product-carousel .carousel-control-prev-icon,
+.product-carousel .carousel-control-next-icon{
+  background-color:rgba(0,0,0,0.4);
+  border-radius:50%;
+  padding:10px;
+}
+
+.product-carousel{
+  height:250px;
+}
+
+
+/* HERO SLIDER */
 /* HERO SLIDER */
 .hero-slider,
 #heroCarousel,
@@ -804,7 +831,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  /* background: rgba(0,0,0,0.45); */
 }
 
 /* Content above overlay */
@@ -846,29 +873,3 @@ body {
     padding: 8px 16px;
   }
 }
-
-
-.product-carousel{
-  background:#fff;
-  border-radius:10px;
-  padding:10px;
-}
-
-.product-img-slider{
-  height:220px;
-  object-fit:contain;
-}
-
-.product-carousel .carousel-control-prev-icon,
-.product-carousel .carousel-control-next-icon{
-  background-color:rgba(0,0,0,0.4);
-  border-radius:50%;
-  padding:10px;
-}
-
-.product-carousel{
-  height:250px;
-}
-
-
-
