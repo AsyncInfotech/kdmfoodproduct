@@ -873,3 +873,30 @@ body {
     padding: 8px 16px;
   }
 }
+
+/*-------Hero Text------*/
+.text-overlay{
+  display:inline;
+  padding:4px 8px;
+  background:rgba(0,0,0,0.45);
+  border-radius:4px;
+}
+
+.price-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+
+.new-price{
+  font-size:24px;
+  font-weight:700;
+  color:#f4b400;
+}
+
+.old-price{
+  font-size:16px;
+  color:#888;
+  text-decoration:line-through;
+}
