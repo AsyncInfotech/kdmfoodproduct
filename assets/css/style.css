@@ -900,3 +900,10 @@ body {
   color:#888;
   text-decoration:line-through;
 }
+
+.kds-red{
+  color:#ff3b3b; /* brighter red */
+  font-weight:700;
+  text-shadow: 0 0 6px rgba(255,255,255,0.9),
+               0 0 10px rgba(255,255,255,0.7);
+}
