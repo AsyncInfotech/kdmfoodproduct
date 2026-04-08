@@ -168,31 +168,40 @@
 </section>
 
 <!-- ================= PAYMENT ================= -->
-<!-- <section class="py-5 bg-light">
+<section class="py-5 bg-light payment-section">
   <div class="container">
+
+    <!-- Heading -->
     <div class="text-center mb-4">
-      <h3 class="fw-bold">Payment Information</h3>
-      <p class="text-muted">Secure & Easy Payments</p>
-    </div> -->
-
-    <!-- <div class="row g-4 align-items-center">
-      <div class="col-md-7">
-        <div class="payment-card fade-up">
-          <p><strong>Account Name:</strong> KDS Dairy Products</p>
-          <p><strong>Bank Name:</strong> State Bank of India</p>
-          <p><strong>Account Number:</strong> XXXXXXXXXXXX</p>
-          <p><strong>IFSC Code:</strong> SBINXXXXXX</p>
-          <p><strong>UPI ID:</strong> kds@upi</p>
-        </div>
-      </div> -->
-
-      <!-- <div class="col-md-12 text-center">
-        <img src="images/qr.png" class="img-fluid shadow rounded-4" style="max-width:260px;">
-        <p class="small text-muted mt-2">Scan QR to Pay</p>
-      </div>
+      <h3 class="fw-bold">Payment Options</h3>
+      <p class="text-muted">Pay securely using your favorite app</p>
     </div>
+
+    <!-- Tiles -->
+    <div class="row justify-content-center g-4">
+
+      <!-- PhonePe -->
+      <div class="col-4 col-md-2 text-center">
+        <a href="upi://pay?pa=Q119343140@ybl&pn=KDS Dairy&cu=INR"
+           class="payment-tile-glass"
+           title="Pay with PhonePe">
+          <img src="images/PhonePelogo.png" alt="PhonePe">
+        </a>
+      </div>
+
+      <!-- Google Pay -->
+      <div class="col-4 col-md-2 text-center">
+        <a href="upi://pay?pa=7439966891@okbizaxis&pn=KDS Dairy&cu=INR"
+           class="payment-tile-glass"
+           title="Pay with Google Pay">
+          <img src="images/GPaylogo.png" alt="Google Pay">
+        </a>
+      </div>
+
+    </div>
+
   </div>
-</section> -->
+</section>
 
 <!-- ================= CTA ================= -->
 <section class="py-5 text-center text-light" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">

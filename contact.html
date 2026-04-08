@@ -157,19 +157,19 @@
             Fill the form and we’ll get back to you shortly.
           </p>
 
-          <form>
+          <form onsubmit="sendToWhatsApp(event)">
             <div class="row g-3">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" required>
+                <input type="text"  id="name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="col-md-6">
-                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                <input type="tel" id="phone" class="form-control" placeholder="Phone Number" required>
               </div>
               <div class="col-12">
-                <input type="email" class="form-control" placeholder="Email Address">
+                <input type="email" id="email" class="form-control" placeholder="Email Address">
               </div>
               <div class="col-12">
-                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
               </div>
               <div class="col-12 text-center">
                 <button type="submit" class="btn btn-warning btn-lg px-5">
@@ -214,8 +214,9 @@
           <span class="fw-bold fs-4 text-white">KDS Dairy Products</span>
         </div>
         <p class="footer-text">
-          100% Pure Desi Ghee made using traditional bilona method.
+          100% Pure Desi Ghee made using traditional method.
         </p>
+ 
       </div>
 
       <div class="col-md-4">
@@ -252,7 +253,32 @@
 </footer>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function sendToWhatsApp(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  let whatsappMessage =
+`Hello, I want to contact KDS Dairy Products:
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Message: ${message}`;
+
+  let encodedMessage = encodeURIComponent(whatsappMessage);
+
+  let whatsappNumber = "916291666891"; // tomar number
+
+  let url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(url, "_blank");
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
