@@ -915,9 +915,9 @@ body {
 
 /* Glass Tile */
 .payment-tile-glass{
-  /* width:120px;
+  width:120px;
   height:120px;
-  display:flex; */
+  display:flex;
   align-items:center;
   justify-content:center;
   margin:auto;
