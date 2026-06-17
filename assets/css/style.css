@@ -811,100 +811,131 @@ body {
 
 
 /* HERO SLIDER */
-/* HERO SLIDER */
-.hero-slider,
-#heroCarousel,
-.carousel-inner,
-.carousel-item {
-  height: 85vh;
+.hero-slider{
+    width:100%;
 }
 
-/* Each slide */
-.hero-slide {
-  height: 85vh;
-  position: relative;
+.carousel-item{
+    position:relative;
 }
 
-/* Overlay for better visibility */
-.hero-slide::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* background: rgba(0,0,0,0.45); */
+.hero-banner{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
-/* Content above overlay */
-.hero-slide .container {
-  position: relative;
-  z-index: 2;
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    /* background:linear-gradient(to right,
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.15),
+    rgba(0,0,0,0)); */
+    color:#fff;
 }
 
-/* Mobile fix */
-@media (max-width: 992px) {
-  .hero-slider,
-  #heroCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .hero-slide {
-    height: 60vh;
-  }
+.hero-overlay .container{
+    position:relative;
+    z-index:2;
 }
 
-@media (max-width: 576px) {
-  .hero-slider,
-  #heroCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .hero-slide {
-    height: 50vh;
-  }
-
-  .hero-slide h1 {
-    font-size: 24px;
-  }
-
-  .hero-slide p {
-    font-size: 14px;
-  }
-
-  .hero-slide .btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
+.hero-overlay h1{
+    font-size:58px;
+    font-weight:700;
+    line-height:1.2;
 }
 
-/*-------Hero Text------*/
-.text-overlay{
-  display:inline;
-  padding:4px 8px;
-  background:rgba(0,0,0,0.45);
-  border-radius:4px;
+.hero-overlay p{
+    font-size:21px;
+    max-width:600px;
 }
 
-.price-box{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
+.carousel-indicators{
+    bottom:25px;
 }
 
-.new-price{
-  font-size:24px;
-  font-weight:700;
-  color:#f4b400;
+.carousel-indicators button{
+    width:12px;
+    height:12px;
+    border-radius:50%;
 }
 
-.old-price{
-  font-size:16px;
-  color:#888;
-  text-decoration:line-through;
+/* Large Screen */
+
+@media (max-width:1400px){
+
+.hero-overlay h1{
+font-size:50px;
 }
 
-.kds-red{
-  color:#ff3b3b; /* brighter red */
-  font-weight:700;
-  text-shadow: 0 0 6px rgba(255,255,255,0.9),
-               0 0 10px rgba(255,255,255,0.7);
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.hero-overlay h1{
+font-size:44px;
+}
+
+.hero-overlay p{
+font-size:18px;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.hero-overlay{
+padding:30px;
+}
+
+.hero-overlay h1{
+font-size:36px;
+}
+
+.hero-overlay p{
+font-size:17px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.hero-banner{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    /* background:rgba(0,0,0,.35); */
+}
+
+.hero-overlay h1{
+    font-size:26px;
+}
+
+.hero-overlay p{
+    font-size:15px;
+}
+
+.hero-overlay .btn{
+    width:100%;
+}
+
 }
 
 /* Optional background for glass effect */
@@ -959,8 +990,8 @@ body {
 @media(max-width:768px){
 
   .site-logo{
-    width:175px;
-    height:85px;
+    width:135px;
+    height:75px;
   }
 
 }
