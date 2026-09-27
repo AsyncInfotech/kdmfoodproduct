@@ -34,6 +34,41 @@
 </head>
 
 <body>
+  <div class="payment-overlay" id="paymentReminder">
+
+  <div class="payment-popup">
+
+    <div class="payment-icon">
+      <i class="bi bi-exclamation-circle"></i>
+    </div>
+
+    <h2>Payment Reminder</h2>
+
+    <h3>Website Update Payment Pending</h3>
+
+    <p>
+      This website has been updated as requested.
+      However, the payment for the website-related work
+      is still pending.
+    </p>
+
+    <div class="payment-note">
+      <strong>Kindly clear the outstanding amount</strong>
+      so that we can continue providing further website
+      updates and support.
+    </div>
+
+    <button class="payment-btn" onclick="closePaymentReminder()">
+      Continue to Website
+    </button>
+
+    <button class="payment-close" onclick="closePaymentReminder()">
+      Close Reminder
+    </button>
+
+  </div>
+
+</div>
 
   <!-- ================= HEADER ================= -->
   <header class="sticky-top bg-white border-bottom shadow-sm">
@@ -1014,5 +1049,11 @@ Total: ₹${total}`;
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function closePaymentReminder() {
+    document.getElementById("paymentReminder").style.display = "none";
+  }
+</script>
+  
 </body>
 </html>
